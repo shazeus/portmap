@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68", "wheel"]
+requires = ["setuptools>=60,<68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -7,7 +7,7 @@ name = "portmap-cli"
 version = "0.1.0"
 description = "Fast lightweight network scanner CLI — port scanning, host discovery, service detection"
 readme = "README.md"
-license = { text = "MIT" }
+license = {text = "MIT"}
 authors = [{ name = "shazeus", email = "efeborazan07@gmail.com" }]
 keywords = ["network", "port-scanner", "cli", "security", "nmap", "reconnaissance"]
 classifiers = [
@@ -15,7 +15,6 @@ classifiers = [
     "Environment :: Console",
     "Intended Audience :: Developers",
     "Intended Audience :: System Administrators",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.9",
