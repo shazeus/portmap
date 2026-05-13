@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "portmap-cli"
+version = "0.1.0"
+description = "Fast lightweight network scanner CLI — port scanning, host discovery, service detection"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "shazeus", email = "efeborazan07@gmail.com" }]
+keywords = ["network", "port-scanner", "cli", "security", "nmap", "reconnaissance"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: System :: Networking",
+    "Topic :: Security",
+    "Topic :: Utilities",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "click>=8.0",
+    "rich>=13.0",
+]
+
+[project.scripts]
+portmap = "portmap.cli:cli"
+
+[project.urls]
+Homepage = "https://github.com/shazeus/portmap"
+Repository = "https://github.com/shazeus/portmap"
+"Bug Tracker" = "https://github.com/shazeus/portmap/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["portmap*"]
